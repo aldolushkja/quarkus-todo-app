@@ -1,6 +1,12 @@
 pipeline{
     agent any
     stages {
+        stage('Config permissions') {
+            steps {
+              sh  'sudo chmod a+x *.sh'
+            }
+        }
+        
         stage('Build Native Image') {
             steps {
               sh  '1_buildNativeLinux.sh'
