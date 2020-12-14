@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: todo-schema
-        image: docker.io/burrsutter/todo:schema
+        image: docker.io/alushkja/todo:latest
         imagePullPolicy: Always
         env:
         - name: QUARKUS_DATASOURCE_URL
